@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 8000 // for Heroku 
+const PORT = process.env.PORT || 8000 
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
@@ -32,7 +32,7 @@ const newspapers = [
     {
         name: 'wsournal',
         address: 'https://www.wsj.com/news/types/environment-science',
-        base:'',
+        base: '',
         source: 'The Wall Street Journal (USA)'
     },
     {
@@ -50,19 +50,19 @@ const newspapers = [
     {
         name: 'timesofindia',
         address: 'https://timesofindia.indiatimes.com/home/environment',
-        base:'',
-        source: 'The Times of India' 
+        base: '',
+        source: 'The Times of India'
     },
     {
         name: 'sydneymorningherald',
         address: 'https://www.smh.com.au/environment/climate-change',
-        base:'',
+        base: '',
         source: 'The Sidney Morning Herald (Australia)'
     },
     {
         name: 'dailymail',
         address: 'https://www.dailymail.co.uk/news/climate_change_global_warming/index.html',
-        base:'',
+        base: '',
         source: 'Daily Mail (UK)'
     },
     {
