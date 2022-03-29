@@ -64,12 +64,6 @@ const newspapers = [
         address: 'https://www.dailymail.co.uk/news/climate_change_global_warming/index.html',
         base: '',
         source: 'Daily Mail (UK)'
-    },
-    {
-        name: 'batimes',
-        address: 'https://www.batimes.com.ar/topics/climate-change',
-        base: '',
-        source: 'Buenos Aires Times (Argentina)'
     }
 ]
 
@@ -81,7 +75,7 @@ newspapers.forEach(newspaper => {
             const html = response.data
             const $ = cheerio.load(html)
 
-            $('a:contains("climate")', html).each(function () { // arrow function doesn't work in cheerio
+            $('a:contains("climate")', html).each(function () {
                 const title = $(this).text()
                 const url = $(this).attr('href')
                 articles.push({
