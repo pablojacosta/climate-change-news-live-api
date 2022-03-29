@@ -30,7 +30,7 @@ const newspapers = [
         source: 'The New York Times (USA)'
     },
     {
-        name: 'wsournal',
+        name: 'wsjournal',
         address: 'https://www.wsj.com/news/types/environment-science',
         base: '',
         source: 'The Wall Street Journal (USA)'
